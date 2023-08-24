@@ -13,8 +13,24 @@
     height: 1px;
     background: rgba(255, 255, 255, 0.6);
   }
+
   &.is--active {
     background-color: #fff;
+    & .logo .main {
+      opacity: 0;
+    }
+
+    .util-menu {
+      & > * {
+        color: #333;
+      }
+      .gnb-open {
+        width: 30px;
+        height: 30px;
+        background: url("/assets/images/icon/list_black.svg") no-repeat center;
+        background-size: contain;
+      }
+    }
   }
 
   .inner {
@@ -22,9 +38,100 @@
     width: 100%;
     max-width: calc(100% - 8rem);
     height: 100%;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    .logo {
+      position: absolute;
+      left: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      a {
+        position: relative;
+      }
+      .main {
+        position: relative;
+        opacity: 1;
+        z-index: 9;
+      }
+      .hide {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .gnb {
+      margin-right: 68px;
+      .main-menu {
+        &.is--active > li > a {
+          color: #333;
+        }
+        & > li {
+          position: relative;
+          display: inline-block;
+          & > a {
+            font-size: 2.5rem;
+            font-weight: 600;
+            padding: 3.25rem 2.5rem;
+            color: #fff;
+            transition: 0.3s;
+            &:hover {
+              color: #eb2a4a;
+            }
+          }
+
+          & > .lnb {
+            position: absolute;
+            top: 135%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+            min-width: 180px;
+            width: 120%;
+            border-radius: 8px;
+            background: #bf2a4c;
+
+            font-size: 1.8rem;
+            line-height: 1.75;
+            padding: 1.25rem 0.5rem;
+            text-align: center;
+            color: #fff;
+
+            z-index: 99;
+            &.is--active {
+              display: block;
+            }
+            a {
+              display: block;
+              padding: 0.25rem 0;
+            }
+          }
+        }
+      }
+    }
+
+    .util-menu {
+      display: flex;
+      .language {
+        margin-right: 2.2rem;
+        font-size: 2.2rem;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        line-height: 3rem;
+        transition: 0.3s;
+      }
+      .gnb-open {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url("/assets/images/icon/list.svg") no-repeat center;
+        background-size: contain;
+      }
+    }
   }
 }

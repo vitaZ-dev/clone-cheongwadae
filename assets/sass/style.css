@@ -166,6 +166,18 @@ section {
 .header.is--active {
   background-color: #fff;
 }
+.header.is--active .logo .main {
+  opacity: 0;
+}
+.header.is--active .util-menu > * {
+  color: #333;
+}
+.header.is--active .util-menu .gnb-open {
+  width: 30px;
+  height: 30px;
+  background: url("/assets/images/icon/list_black.svg") no-repeat center;
+  background-size: contain;
+}
 .header .inner {
   position: relative;
   width: 100%;
@@ -174,6 +186,90 @@ section {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+.header .inner .logo {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .inner .logo a {
+  position: relative;
+}
+.header .inner .logo .main {
+  position: relative;
+  opacity: 1;
+  z-index: 9;
+}
+.header .inner .logo .hide {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .inner .gnb {
+  margin-right: 68px;
+}
+.header .inner .gnb .main-menu.is--active > li > a {
+  color: #333;
+}
+.header .inner .gnb .main-menu > li {
+  position: relative;
+  display: inline-block;
+}
+.header .inner .gnb .main-menu > li > a {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 3.25rem 2.5rem;
+  color: #fff;
+  transition: 0.3s;
+}
+.header .inner .gnb .main-menu > li > a:hover {
+  color: #eb2a4a;
+}
+.header .inner .gnb .main-menu > li > .lnb {
+  position: absolute;
+  top: 135%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  min-width: 180px;
+  width: 120%;
+  border-radius: 8px;
+  background: #bf2a4c;
+  font-size: 1.8rem;
+  line-height: 1.75;
+  padding: 1.25rem 0.5rem;
+  text-align: center;
+  color: #fff;
+  z-index: 99;
+}
+.header .inner .gnb .main-menu > li > .lnb.is--active {
+  display: block;
+}
+.header .inner .gnb .main-menu > li > .lnb a {
+  display: block;
+  padding: 0.25rem 0;
+}
+.header .inner .util-menu {
+  display: flex;
+}
+.header .inner .util-menu .language {
+  margin-right: 2.2rem;
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 3rem;
+  transition: 0.3s;
+}
+.header .inner .util-menu .gnb-open {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("/assets/images/icon/list.svg") no-repeat center;
+  background-size: contain;
 }
 
 .box {
