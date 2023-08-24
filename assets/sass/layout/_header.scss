@@ -1,0 +1,30 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  background-color: transparent;
+  z-index: 999998;
+  transition: 0.25s;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.6);
+  }
+  &.is--active {
+    background-color: #fff;
+  }
+
+  .inner {
+    position: relative;
+    width: 100%;
+    max-width: calc(100% - 8rem);
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
