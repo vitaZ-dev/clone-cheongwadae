@@ -163,11 +163,71 @@
 
       <main class="main">
         <!-- carousel -->
-        <section class="carousel" style="background-color: aqua">
-          <div class="inner">
-            <h3 class="title">carousel</h3>
+        <section class="carousel">
+          <!-- Swiper -->
+          <div class="swiper sw-carousel">
+            <div class="swiper-wrapper">
+              <!-- json에서 목록관리(예정) -->
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/carousel/carousel01.jpg"
+                  alt="img01"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/carousel/carousel02.jpg"
+                  alt="img02"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/carousel/carousel03.jpg"
+                  alt="img03"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/carousel/carousel04.jpg"
+                  alt="img04"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/carousel/carousel05.jpg"
+                  alt="img05"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/carousel/carousel06.jpg"
+                  alt="img06"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/carousel/carousel07.jpg"
+                  alt="img07"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="scroll">
+            <span>스크롤</span>
           </div>
         </section>
+        <script>
+          const carouselSwiper = new Swiper(".sw-carousel", {
+            loop: true,
+            effect: "fade",
+            speed: 1000,
+            touchRatio: 0, //드래그 금지
+            autoplay: {
+              delay: 3500,
+              disableOnInteraction: false,
+            },
+          });
+        </script>
 
         <!-- introduce -->
         <section class="introduce" style="background-color: aqua">

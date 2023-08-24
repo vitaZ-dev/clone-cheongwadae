@@ -1,8 +1,28 @@
+// font
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+/* pretendard */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+/* noto serif kr */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap");
+//
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline-style: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 ul {
   list-style: none;
@@ -80,6 +100,6 @@ section {
   height: 100%;
 }
 
-section {
-  padding-top: 9rem;
-}
+// section {
+//   padding-top: 9rem;
+// }
