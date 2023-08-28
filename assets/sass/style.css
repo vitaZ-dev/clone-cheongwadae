@@ -323,6 +323,7 @@ section {
 .introduce {
   background: url("/assets/images/section01.jpg") center no-repeat;
   background-size: cover;
+  position: relative;
 }
 .introduce .btn-area .apply {
   background-color: rgba(0, 0, 0, 0.5);
@@ -377,6 +378,79 @@ section {
 .btn-area {
   margin-top: 3.4rem;
   text-align: center;
+}
+
+.tab-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 22rem;
+  max-width: 102rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.tab-menu .tab-item {
+  width: 33.3333333333%;
+  vertical-align: middle;
+  height: 100%;
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: center;
+  padding-right: 2px;
+}
+.tab-menu .tab-item:nth-child(1) > a::before {
+  background-color: #22adb9;
+}
+.tab-menu .tab-item:nth-child(2) > a::before {
+  background-color: #1b5bbe;
+}
+.tab-menu .tab-item:nth-child(3) > a::before {
+  background-color: #d93f69;
+}
+.tab-menu .tab-item a {
+  position: relative;
+  display: block;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.33);
+}
+.tab-menu .tab-item a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.4rem;
+  transition: all 0.3s;
+  z-index: 0;
+}
+.tab-menu .tab-item a:hover::before {
+  content: "";
+  height: 100%;
+}
+.tab-menu .tab-item a .item {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.tab-menu .tab-item a .item div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tab-menu .tab-item a .item div img {
+  margin-bottom: 2rem;
+}
+.tab-menu .tab-item:nth-child(2) img {
+  margin-bottom: 3.4rem !important;
 }
 
 .section .inner {
