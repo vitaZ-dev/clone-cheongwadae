@@ -1,4 +1,32 @@
 .introduce {
   background: url("/assets/images/section01.jpg") center no-repeat;
   background-size: cover;
+
+  .btn-area {
+    .apply {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      display: inline-block;
+      padding: 2.3rem 6.2rem;
+      text-align: center;
+      font-size: 2.3rem;
+      font-weight: 600;
+      line-height: 2.2rem;
+      border: 1px solid transparent;
+      transition: all 0.3s;
+      border-radius: 3.5rem;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: 0.1rem;
+        margin-left: 0.9rem;
+        width: 1.8rem;
+        height: 2rem;
+        background: url("/assets/images/icon/arrow-right-solid.svg") center
+          no-repeat;
+        background-size: cover;
+      }
+    }
+  }
 }

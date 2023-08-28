@@ -2,7 +2,7 @@
   display: block;
   color: #fff;
   text-align: center;
-  font-family: "NotoSerif", Serif;
+  font-family: "Noto Serif KR", serif;
   word-break: keep-all;
 }
 
@@ -10,7 +10,6 @@
   @include common-style;
   font-size: 5.5rem;
   font-weight: 600;
-  color: #fff;
   line-height: 7.7rem;
   letter-spacing: -2.52px;
 }
@@ -19,7 +18,11 @@
   margin-top: 2.6rem;
   font-size: 2.2rem;
   font-weight: 500;
-  color: #fff;
   line-height: 3.8rem;
   letter-spacing: -0.75px;
+}
+
+.btn-area {
+  margin-top: 3.4rem;
+  text-align: center;
 }
