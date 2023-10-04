@@ -31,17 +31,17 @@
           position: relative;
           &:nth-child(1)::before {
             @include common-style;
-            background-image: url("../../assets/images/section02_icon01.png");
+            background-image: url("../../assets/images/icon/section02_icon01.png");
           }
           &:nth-child(2)::before {
             @include common-style;
             width: 29px;
             height: 29px;
-            background-image: url("../../assets/images/section02_icon02.png");
+            background-image: url("../../assets/images/icon/section02_icon02.png");
           }
           &:nth-child(3)::before {
             @include common-style;
-            background-image: url("../../assets/images/section02_icon03.png");
+            background-image: url("../../assets/images/icon/section02_icon03.png");
           }
           &::after {
             content: url("../../assets/images/icon/angle-right.svg");
