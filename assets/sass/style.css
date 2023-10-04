@@ -183,7 +183,7 @@ section {
 .header.is--active .util-menu .gnb-open {
   width: 30px;
   height: 30px;
-  background: url("/assets/images/icon/list_black.svg") no-repeat center;
+  background: url("../../assets/images/icon/list_black.svg") no-repeat center;
   background-size: contain;
 }
 .header .inner {
@@ -276,7 +276,7 @@ section {
   display: block;
   width: 30px;
   height: 30px;
-  background: url("/assets/images/icon/list.svg") no-repeat center;
+  background: url("../../assets/images/icon/list.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -305,7 +305,7 @@ section {
   bottom: 0;
   width: 2.9rem;
   height: 2.6rem;
-  background: url("/assets/images/icon/scroll.png") center no-repeat;
+  background: url("../../assets/images/icon/scroll.png") center no-repeat;
   background-size: contain;
   transform: translateX(-50%);
   animation: arrow-move 1.5s infinite linear alternate;
@@ -317,7 +317,7 @@ section {
   }
 }
 .introduce {
-  background: url("/assets/images/section01.jpg") center no-repeat;
+  background: url("../../assets/images/section01.jpg") center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -342,12 +342,12 @@ section {
   margin-left: 0.9rem;
   width: 1.8rem;
   height: 2rem;
-  background: url("/assets/images/icon/arrow-right-solid.svg") center no-repeat;
+  background: url("../../assets/images/icon/arrow-right-solid.svg") center no-repeat;
   background-size: cover;
 }
 
 .event {
-  background: url("/assets/images/section02.jpg") center no-repeat;
+  background: url("../../assets/images/section02.jpg") center no-repeat;
   background-size: cover;
 }
 .event .inner {
@@ -372,7 +372,7 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("/assets/images/section02_icon01.png");
+  background-image: url("../../assets/images/section02_icon01.png");
 }
 .event .inner .left-side .menu-list-area .list-area li:nth-child(2) > a::before {
   content: "";
@@ -385,7 +385,7 @@ section {
   background-position: center;
   width: 29px;
   height: 29px;
-  background-image: url("/assets/images/section02_icon02.png");
+  background-image: url("../../assets/images/section02_icon02.png");
 }
 .event .inner .left-side .menu-list-area .list-area li:nth-child(3) > a::before {
   content: "";
@@ -396,10 +396,10 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("/assets/images/section02_icon03.png");
+  background-image: url("../../assets/images/section02_icon03.png");
 }
 .event .inner .left-side .menu-list-area .list-area li a::after {
-  content: url("/assets/images/icon/angle-right.svg");
+  content: url("../../assets/images/icon/angle-right.svg");
 }
 .event .inner .left-side .menu-list-area .list-area li a {
   display: block;

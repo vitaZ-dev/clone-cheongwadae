@@ -1,5 +1,5 @@
 .introduce {
-  background: url("/assets/images/section01.jpg") center no-repeat;
+  background: url("../../assets/images/section01.jpg") center no-repeat;
   background-size: cover;
   position: relative;
 
@@ -24,8 +24,7 @@
         margin-left: 0.9rem;
         width: 1.8rem;
         height: 2rem;
-        background: url("/assets/images/icon/arrow-right-solid.svg") center
-          no-repeat;
+        background: url("../../assets/images/icon/arrow-right-solid.svg") center no-repeat;
         background-size: cover;
       }
     }
