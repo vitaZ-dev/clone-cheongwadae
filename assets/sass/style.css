@@ -379,7 +379,7 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../assets/images/section02_icon01.png");
+  background-image: url("../../assets/images/icon/section02_icon01.png");
 }
 .event .inner .left-side .menu-list-area .list-area li:nth-child(2)::before {
   content: "";
@@ -395,7 +395,7 @@ section {
   background-position: center;
   width: 29px;
   height: 29px;
-  background-image: url("../../assets/images/section02_icon02.png");
+  background-image: url("../../assets/images/icon/section02_icon02.png");
 }
 .event .inner .left-side .menu-list-area .list-area li:nth-child(3)::before {
   content: "";
@@ -409,7 +409,7 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../assets/images/section02_icon03.png");
+  background-image: url("../../assets/images/icon/section02_icon03.png");
 }
 .event .inner .left-side .menu-list-area .list-area li::after {
   content: url("../../assets/images/icon/angle-right.svg");
@@ -533,6 +533,49 @@ section {
 }
 .tab-menu .tab-item:nth-child(2) img {
   margin-bottom: 3.4rem !important;
+}
+
+.event .inner .right-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.event .inner .right-side .right-box {
+  padding-top: 9rem;
+  padding-left: 5rem;
+  max-width: 47rem;
+}
+.event .inner .right-side .right-box .right-item {
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  min-height: 43rem;
+  position: relative;
+  transition: 0.3s;
+}
+.event .inner .right-side .right-box .right-item .item-thumbnail {
+  transform: translate(-50px, -100px);
+  width: 42rem;
+  height: auto;
+}
+.event .inner .right-side .right-box .right-item .item-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+.event .inner .right-side .right-box .right-item .item-container {
+  padding: 4rem;
+  margin-top: -8rem;
+  color: #fff;
+}
+.event .inner .right-side .right-box .right-item .item-container .item-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.event .inner .right-side .right-box .right-item .item-container .item-contents {
+  font-size: 1.9rem;
+  font-weight: 400;
+  opacity: 0.8;
 }
 
 .section {
