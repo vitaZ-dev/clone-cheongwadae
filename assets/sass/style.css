@@ -363,23 +363,33 @@ section {
   width: 30rem;
   margin-top: 5rem;
 }
-.event .inner .left-side .menu-list-area .list-area li:nth-child(1) > a::before {
+.event .inner .left-side .menu-list-area .list-area li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4509803922);
+  position: relative;
+}
+.event .inner .left-side .menu-list-area .list-area li:nth-child(1)::before {
   content: "";
   display: inline-block;
-  position: relative;
   width: 24px;
   height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../assets/images/section02_icon01.png");
 }
-.event .inner .left-side .menu-list-area .list-area li:nth-child(2) > a::before {
+.event .inner .left-side .menu-list-area .list-area li:nth-child(2)::before {
   content: "";
   display: inline-block;
-  position: relative;
   width: 24px;
   height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -387,24 +397,31 @@ section {
   height: 29px;
   background-image: url("../../assets/images/section02_icon02.png");
 }
-.event .inner .left-side .menu-list-area .list-area li:nth-child(3) > a::before {
+.event .inner .left-side .menu-list-area .list-area li:nth-child(3)::before {
   content: "";
   display: inline-block;
-  position: relative;
   width: 24px;
   height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../assets/images/section02_icon03.png");
 }
-.event .inner .left-side .menu-list-area .list-area li a::after {
+.event .inner .left-side .menu-list-area .list-area li::after {
   content: url("../../assets/images/icon/angle-right.svg");
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
 }
 .event .inner .left-side .menu-list-area .list-area li a {
   display: block;
-  padding: 2rem 4rem;
   position: relative;
+  padding: 2rem 4rem;
   font-size: 2rem;
   font-weight: 500;
   color: #fff;
